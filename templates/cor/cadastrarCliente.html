@@ -1,0 +1,11 @@
+<form method="post">
+    {% csrf_token %}
+    <h1> Cadastro de Cliente</h1><br>
+    <br>
+    <p>Nome: {{ ClienteForm.nome }} </p>
+    <p>email: {{ ClienteForm.email }}</p>
+    <p>Endereco: {{ ClienteForm.endereco }}</p>
+    <br>
+    <br>
+    <input type="submit" value="Enviar">
+</form>
